@@ -1,0 +1,374 @@
+/*================================================
+Fonts
+================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* Start Variables */
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --layer-color: rgba(0, 0, 0, 0.478);
+  --color-primary: #11bb67;
+  --color-secondary: #ff6525;
+}
+@font-face {
+  font-family: "secondary-font";
+  src: url("../fonts/Gloss/ And/Bloom/ Font.ttf");
+}
+
+.main-adrress {
+  font-family: "secondary-font";
+  color: var(--color-secondary);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: white;
+}
+.secondary-button {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.icon-color {
+  color: var(--color-primary);
+}
+
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--white-color);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-fonts);
+  color: var(--dark-color);
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  font-style: normal;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 28px;
+  font-style: normal;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 24px;
+  font-style: normal;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+}
+
+/*===== HTML Tags =====*/
+a,
+.button {
+  color: var(--primary-color);
+  outline: none !important;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none !important;
+}
+
+a:focus,
+a:hover {
+  color: var(--primary-color);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+pre {
+  background: var(--white-color);
+  padding: 15px;
+  border: 1px solid var(--grey-color);
+}
+
+hr {
+  margin: 0;
+  padding: 0px;
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 0px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*end of the global rules*/
+
+
+/* start of header  */
+header .social-links .icons .contact-info i {
+  color: var(--color-primary) !important;
+}
+header nav button {
+  background-color: var(--color-primary) !important;
+}
+/* end of header  */
+/* start of tour grid  */
+.tour-grid{
+  position: relative;
+  margin-top: 12%;
+  height: 400px;
+}
+.tour-grid img{
+  width: 100%;
+  height: 100%;
+}
+.tour-grid::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  z-index: 1;
+}
+.tour-grid h2{
+  text-transform: capitalize;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+.tour-grid .tours{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 2;
+}
+
+@media (min-width: 350px) and (max-width: 700px) {
+
+.tour-grid{
+  margin-top: 40%;
+}
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+
+  .tour-grid{
+    margin-top: 27%;
+  }
+  }
+  @media (min-width: 1025px) and (max-width: 1199px) {
+
+    .tour-grid{
+      margin-top: 20%;
+    }
+    }
+/* end of tour grid  */
+
+/* start of tours  */
+.card{
+  min-width: 32%;
+}
+.card span{
+  color: green;
+}
+/* end of tours  */
+
+/* Start Footer */
+footer {
+  background-color: var(--dark-color);
+  padding-top: 8rem;
+}
+
+footer .container .row .info p {
+  width: 240px;
+}
+
+footer .container .row .info .footer-social a {
+  text-decoration: none;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  margin-right: 5px;
+  padding: 9.5px 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .container .row .info .footer-social a:hover {
+  color: var(--color-primary);
+}
+
+footer .container .row .info .footer-social a svg {
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+footer .container .row .info .footer-social a svg:hover {
+  color: var(--color-secondary);
+}
+
+footer .container .row .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links h6 a{
+  color: var(--white-color);
+}
+
+.links h6 a:hover{
+  color: var(--color-secondary);
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links ul li a:hover {
+  color: var(--color-primary);
+}
+
+/* Start Col-4 */
+/* Start Contact */
+.contact h6 a{
+  color: var(--white-color);
+}
+
+.contact h6 a:hover {
+  color: var(--color-secondary);
+}
+.contact input {
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* End Contact */
+/* End Col-4 */
+/* Start Footer End */
+.footer-end .container {
+  width: 75%;
+  background-color: #2D322F;
+}
+
+.footer-end .container .copy-right {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-end .container .copy-right p a {
+  color: var(--color-primary);
+  text-decoration: none;
+} 
+
+.footer-end .container .copy-right p a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+/* End Footer End */
+/* End Footer */
+
+/* Extra Small */
+@media (min-width: 350px) and (max-width: 700px) {
+
+  .contact input {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .contact input {
+      display: inline-block;
+      margin-right: 10px;
+  }
+}
