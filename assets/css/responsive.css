@@ -1,0 +1,90 @@
+/*====================
+    Responsive css Main
+======================*/
+
+/*
+    Media Queries
+    Responsive Design
+    - Concept Of Width
+    - Mobile
+    - Small Screens
+    - Medium Screens
+    - Large Screens
+    - Future Updates
+*/
+
+/* Extra Small */
+@media (min-width: 350px) and (max-width: 700px) {
+    .header-social ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-social ul li:first-of-type {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .header-social ul li a svg {
+        font-size: 18px;
+    }
+
+    .image-grid {
+        display: none;
+    }
+    
+    .contact input {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+/* Small */
+@media (min-width: 700px) {
+    .container {
+        width: 750px;
+    }
+
+    .header-contact ul li a {
+        font-size: 11px;
+    }
+    
+    .header-contact ul li a svg {
+        font-size: 17px;
+    }
+    
+    .header-social ul li a svg {
+        font-size: 14px;
+    }
+
+    .contact input {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .header-contact ul li a {
+        font-size: 12px;
+    }
+    
+    .header-contact ul li a svg {
+        font-size: 17px;
+    }
+    
+    .header-social ul li a svg {
+        font-size: 14px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
